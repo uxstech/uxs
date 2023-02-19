@@ -55,14 +55,14 @@
 			</div>
 			<nav :class="{ 'transform md:transform-none': !open, 'h-full': open }"
 				class="h-0 md:h-auto flex flex-col flex-grow md:items-center pb-4 md:pb-0 md:flex md:justify-end md:flex-row origin-top duration-300 scale-y-0">
-				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
-					href="#">Home</a>
-				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
-					href="#">Careers</a>
-				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
-					href="#">Blog</a>
-				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
-					href="#">About Us</a>
+				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-blue-200 rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
+					href="#about">About</a>
+				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-blue-200 rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
+					href="#tech">Technologies</a>
+				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-blue-200 rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
+					href="#services">Services</a>
+				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-blue-200 rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
+					href="#contactus">Contact us</a>
 			</nav>
 		</div>
 	</div>
@@ -92,15 +92,13 @@
 
 		<!-- container -->
 		<div class="container px-4 lg:px-8 mx-auto max-w-screen-xl text-gray-700 overflow-x-hidden">
-			<!-- All-In-One Cloud Software. -->
 			<div data-aos="flip-up" class="max-w-xl mx-auto text-center mt-24">
-				<h1 class="font-bold text-darken my-3 text-2xl">Technologies we work with <span
+				<h1 id="tech" class="font-bold text-darken my-3 text-2xl">Technologies we work with <span
 						class="text-yellow-500">@
 						UxS.</span></h1>
 				<p class="leading-relaxed text-gray-700 font-medium text-sm">Using modern technologies, we build with
 					efficiency and skill, creating flexible and scalable business-driven solutions.</p>
 			</div>
-			<!-- card -->
 			<div class="grid md:grid-cols-3 gap-14 md:gap-5 mt-20">
 				<div data-aos="fade-up" class="bg-white shadow-xl p-6 text-center rounded-xl">
 					<div
@@ -177,7 +175,7 @@
 			</div>
 
 			<!-- lorem -->
-			<div class="mt-28">
+			<div id="about" class="mt-28">
 				<div data-aos="flip-down" class="text-center max-w-screen-md mx-auto">
 					<h1 class="text-3xl font-bold mb-4">What we do at <span class="text-yellow-500">UxS?</span></h1>
 					<p class="text-gray-700 font-medium text-sm">At UXS, we believe in mapping innovational and
@@ -218,7 +216,7 @@
 				</div>
 			</div>
 
-			<div class="mt-28">
+			<div id="services" class="mt-28">
 				<div data-aos="flip-down" class="text-center max-w-screen-md mx-auto">
 					<h1 class="text-3xl font-bold">Our <span class="text-yellow-500">Services</span></h1>
 				</div>
@@ -448,10 +446,11 @@
 							</div>
 							<button onclick="example_append()"
 								class="mx-auto flex text-white bg-yellow-500 font-medium  border-0 py-2 px-6 focus:outline-none hover:bg-yellow-400 rounded text-sm">Submit</button>
-							<input type="hidden" name="_next" value="https://amazemotordriving.com/pages/thankyou.html">
+							<input type="hidden" name="_next"
+								value="https://uxstechnologies.github.io/uxs/pages/thankyou.html">
 							<input type="hidden" name="_template" value="table">
 							<input type="hidden" name="_captcha" value="false">
-							<input type="hidden" id="subject" name="_subject" value="">
+							<input type="hidden" id="subject" name="_subject" value="_subject">
 						</form>
 						<p class="text-xs font-medium text-center text-gray-500 mt-3">We will reach out to you as soon
 							as possible.
@@ -486,6 +485,7 @@
 	<script>
 		AOS.init();
 	</script>
+
 	<script language="javascript">
 		function example_append() {
 			var name = document.getElementById('name').value;
